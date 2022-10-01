@@ -1,0 +1,146 @@
+html {
+	margin: 0;
+	padding: 50px;
+background-color: palevioletred;
+	}
+
+* {
+  box-sizing: border-box;
+  }
+
+body { 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: normal;
+  background: rgb(255, 255, 255) ;
+  margin: 0; 
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(30%,auto-fit);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "hd hd"
+                      "sidebar main" 
+                      "footer footer";
+                      border: solid rgb(72, 195, 217) 10px;
+  }
+
+
+#web-intro .heading a {
+  color: palevioletred;
+  font-size: clamp(1em, 1.5em, 2em);
+  line-height: 1.75em;
+}
+
+#web-intro a {
+background: transparent;
+border: none;
+padding: 10px;
+margin: 0;
+border-radius: 0;
+box-shadow: none;
+text-decoration: none;
+}
+
+#web-intro .logo {
+  height: 1.75em;
+  float: left;
+  padding-left: 15px;
+}
+
+#web-intro .heading sup {
+  font-size: .5em;
+  font-style: italic;
+  vertical-align: super;
+  line-height: 0;
+}
+
+@media (min-width:350px){#web-intro .header-list {
+  background-color: rgba(72, 195, 217, 0.162);
+  font-size: 1.5em;
+  font-style: oblique;
+}
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width:350px) {section {
+  padding: 10px;
+  grid-area: hd;
+  box-sizing: border-box;
+  place-items: center;
+}
+}
+
+.footer {
+  min-width: 200px;
+  max-height: 300px;
+  background-color: rgba(72, 195, 217, 0.162);
+}
+
+aside {
+  background:rgba(216, 112, 147, 0.807);
+  grid-area: sidebar;
+  font-size: 1.5em;
+  font-style: oblique;
+  padding: 30px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  background-color: palevioletred;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+
+footer {
+  background: white;
+  grid-area: footer;
+  font-size: 1.5em;
+  font-style: oblique;
+}
+
+p { 
+  margin-top: 0; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.15em;
+  text-align: justify;
+  }
+
+  @media (min-width:40em) {.header-list, .footer-list 
+    {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+}
+  
+  .header-item, .footer-item {
+    margin: 10px;
+  }
+  
+   .navigation-item a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-item a,.header-item a {
+    text-decoration: none;
+    color: palevioletred;
+  }
+  
+  .footer-item a:hover, .footer-item a:active, .header-item a:hover,.header-item a:active, .navigation-item a:hover,
+  .navigation-item a:active {
+    color: rgba(72, 195, 217, 0.918);
+  }
+ 
